@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa"
 
 const NavBar = () => {
 
-
+    /* Nav bar state */
     const [nav, setNav] = useState(false);
 
     const links = [
@@ -49,17 +49,23 @@ const NavBar = () => {
                 
             ))} 
         </ul>
-
-        <div onClick={() => setNav(!nav)} className='cursor-pointer pr-2 z-10 text-gray-500'>
+        {/*Navigation bar for mobile hamburger icon and x icon*/} 
+        <div onClick={() => setNav(!nav)} 
+            className='cursor-pointer pr-2 z-10 text-gray-500
+            md:hidden'
+        >
             {nav ? <FaTimes size ={30} /> : <FaBars size={30} />}
         </div>
 
-        <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500'>
-            <li className='px-4 cursor-pointer capitalize py-6 text-4xl'>home</li>
-            
-        </ul>
-
-
+        {nav && (
+            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500'>
+            {links.map(({id, link}) => (
+                <li key={id} className='px-4 cursor-pointer capitalize py-6 text-4xl'>
+                    {link}
+                </li> 
+            ))} 
+            </ul>
+        )}
     </div>
   )
 }
