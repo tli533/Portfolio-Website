@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      signature: ["Great Vibes"],
+      main: ["Libre Baskerville"],
+    },
   },
   plugins: [],
 }
