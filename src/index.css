@@ -17,3 +17,15 @@
     font-style: normal;
   }
 }
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Positions the child divs to the left and right */
+  /*border: 1px solid #ff0000; /* Optional: for visual clarity */
+  padding: 10px; /* Optional: for some spacing inside the container */
+}
+.left-div, .right-div {
+  width: 45%; /* Adjust the width as needed */
+  /*border: 1px solid #ff0000; /* Optional: for visual clarity */
+  padding: 10px; /* Optional: for some spacing inside the divs */
+}
