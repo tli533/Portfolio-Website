@@ -21,7 +21,10 @@ const Home = () => {
           </p>
 
           <div>
-            <button
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center 
                     rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 font-bold"
             >
@@ -29,7 +32,7 @@ const Home = () => {
               <span className="group-hover:rotate-90 duration-500">
                 <MdKeyboardArrowRight size={30} className="m1-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
