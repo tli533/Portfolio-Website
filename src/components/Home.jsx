@@ -1,6 +1,7 @@
 import React from "react";
 import profile from "../assets/tim.JPG";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
