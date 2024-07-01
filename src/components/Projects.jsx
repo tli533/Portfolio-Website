@@ -57,7 +57,7 @@ const Projects = () => {
             >
               <div className="left-div items-center pt-4 pb-7 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col sm:group-even:ml-[20rem]">
                 <h3 className=" pb-7 font-bold">{title}</h3>
-                <p>{desc}</p>
+                <p className="sm:text-xs md:text-base">{desc}</p>
               </div>
 
               <div className="right-div flex justify-end justify-self-center">
@@ -65,8 +65,7 @@ const Projects = () => {
                   src={src}
                   alt=""
                   width={230}
-                  className="rounded-md
-            hover:scale-105 duration-300"
+                  className="rounded-md hover:scale-105 duration-300"
                 />
               </div>
             </div>
