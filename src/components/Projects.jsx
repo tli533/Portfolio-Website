@@ -11,7 +11,7 @@ const Projects = () => {
   const portfolios = [
     {
       id: 1,
-      src: triangle,
+      src: XI,
       title: "Workout To-Do List",
       desc: "CRUD Application that the user can make a list of works with the ability to update and delete with pagination.",
       size: "scale-200",
@@ -34,7 +34,9 @@ const Projects = () => {
     },
     {
       id: 3,
-      src: FF3FEBRUARY,
+
+      title: "coming soon",
+      desc: "coming soon",
       size: "scale-200",
     },
   ];
