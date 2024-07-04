@@ -5,6 +5,7 @@ import FF3FEBRUARY from "../assets/projects/FF3FEBRUARY.png";
 import XI from "../assets/projects/XI.png";
 import XII from "../assets/projects/XII.png";
 import triangle from "../assets/projects/triangle.jpg";
+import personal from "../assets/projects/personal_site.PNG";
 
 const Projects = () => {
   const portfolios = [
@@ -13,6 +14,7 @@ const Projects = () => {
       src: triangle,
       title: "Workout To-Do List",
       desc: "CRUD Application that the user can make a list of works with the ability to update and delete with pagination.",
+      size: "scale-200",
       frameWorks: [
         "React",
         "Javascript",
@@ -24,11 +26,16 @@ const Projects = () => {
     },
     {
       id: 2,
-      src: FF2,
+      src: personal,
+      title: "Personal Website",
+      desc: "My portfolio website using tailwind and can be viewed on mobile.",
+      frameWorks: ["React", "Javascript", "Tailwind"],
+      size: "scale-200",
     },
     {
       id: 3,
       src: FF3FEBRUARY,
+      size: "scale-200",
     },
   ];
 
@@ -48,14 +55,14 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-1 gap-10 px-12 sm:px-0">
-          {portfolios.map(({ id, src, title, desc, frameWorks }) => (
+          {portfolios.map(({ id, src, title, desc, frameWorks, scale }) => (
             <div
               key={id}
-              className="container border border-gray-500 overflow-hidden object-center items-center shadow-md shadow-gray-600 rounded-lg hover:scale-105 duration-300"
+              className="justify-self-center sm:w-5/6 container border border-gray-500 overflow-hidden object-center items-center shadow-md shadow-gray-600 rounded-lg hover:scale-105 duration-300"
             >
               <div className="left-div pt-4 pb-7 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col sm:group-even:ml-[20rem]">
                 <h3 className="pb-7 font-bold">{title}</h3>
-                <p className="sm:text-xs md:text-base py-2">{desc}</p>
+                <p className="sm:text-xs md:text-base py-1 pb-5">{desc}</p>
                 <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                   {frameWorks &&
                     frameWorks.map((framework, index) => (
@@ -69,7 +76,7 @@ const Projects = () => {
                 </ul>
               </div>
 
-              <div className="right-div justify-end justify-self-center hidden md:flex">
+              <div className="w-1/2 gap-2 right-div justify-center justify-self-center hidden md:flex ">
                 <img
                   src={src}
                   alt=""

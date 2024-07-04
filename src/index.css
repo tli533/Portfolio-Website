@@ -26,7 +26,7 @@
 }
 
 .left-div, .right-div {
-  padding: 10px; /* Optional: for some spacing inside the divs */
+  padding: 5px; /* Optional: for some spacing inside the divs */
 }
 
 /* Default styles for small screens */
@@ -41,7 +41,7 @@
 /* Styles for medium and larger screens */
 @media (width: 700px) {
   .left-div, .right-div {
-    width: 45%;
+    width: 50%;
   }
 
   .right-div {

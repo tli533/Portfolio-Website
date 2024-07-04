@@ -34,7 +34,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex h-20 justify-between items-center w-full px-4 text-white bg-black fixed">
+    <div className="flex h-20 justify-between items-center w-full px-4 text-white bg-black fixed z-50">
       <div>
         <h1 className="text-5xl font-main ml-2"> TL </h1>
       </div>

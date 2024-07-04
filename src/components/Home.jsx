@@ -1,12 +1,11 @@
 import React from "react";
 import profile from "../assets/tim.JPG";
+import avatar from "../assets/avatar.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { HiOutlineMailOpen } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { Contact } from "./Contact";
 
 const Home = () => {
   return (
@@ -44,9 +43,9 @@ const Home = () => {
 
         <div>
           <img
-            src={profile}
+            src={avatar}
             alt="profile dp"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="pl-4 rounded-full w-96 h-96 mx-auto md:w-full opacity-95"
           />
         </div>
       </div>
@@ -57,7 +56,7 @@ const Home = () => {
         >
           Contact me here
           <span>
-            <HiOutlineMailOpen size={30} />
+            <IoMdMail size={30} />
           </span>
         </a>
         <a
