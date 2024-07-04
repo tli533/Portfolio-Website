@@ -39,7 +39,9 @@ const Projects = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-center text-6xl font-bold pb-8">Projects</p>
+          <p className="text-center font-bold sm:pb-8 text-4xl sm:text-6xl pt-10">
+            Projects
+          </p>
           <p className="text-center py-3">
             Check out some of my work right here
           </p>

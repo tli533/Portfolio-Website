@@ -2,6 +2,11 @@ import React from "react";
 import profile from "../assets/tim.JPG";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { Contact } from "./Contact";
 
 const Home = () => {
   return (
@@ -21,7 +26,7 @@ const Home = () => {
             from New Zealand, currently located in Melbourne, Australia.
           </h1>
 
-          <div>
+          <div className="pb-3 sm:pb-0">
             <Link
               to="portfolio"
               smooth
@@ -44,6 +49,43 @@ const Home = () => {
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />
         </div>
+      </div>
+      <div className=" pt-20 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-l sm:text-xl font-medium text-white">
+        <a
+          className="gap-2 sm:gap-3 flex items-center font-bold px-3 py-1 sm:py-2 sm:px-4 uppercase tracking-wider rounded-full border"
+          href="contact"
+        >
+          Contact me here
+          <span>
+            <HiOutlineMailOpen size={30} />
+          </span>
+        </a>
+        <a
+          className="gap-2 sm:gap-3 flex items-center font-bold px-3 py-1 sm:py-2 sm:px-4 uppercase tracking-wider rounded-full border"
+          href="/Draft CV.pdf"
+          target="_blank"
+        >
+          Download CV
+          <span>
+            <BsFillPersonLinesFill size={30} />
+          </span>
+        </a>
+        <a
+          className=" flex items-center font-bold px-3 py-3 uppercase tracking-wider"
+          href="https://www.linkedin.com/in/tim-li-209362209/"
+          target="_blank"
+        >
+          <span>
+            <FaLinkedin size={40} />
+          </span>
+        </a>
+        <a
+          className="flex items-center font-bold px-3 py-3 uppercase tracking-wider"
+          href="https://github.com/tli533"
+          target="_blank"
+        >
+          <FaGithub size={40} />
+        </a>
       </div>
     </div>
   );
