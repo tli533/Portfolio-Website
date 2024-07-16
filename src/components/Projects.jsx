@@ -6,12 +6,13 @@ import XI from "../assets/projects/XI.png";
 import XII from "../assets/projects/XII.png";
 import triangle from "../assets/projects/triangle.jpg";
 import personal from "../assets/projects/personal_site.PNG";
+import Workout from "../assets/projects/Workout website.PNG";
 
 const Projects = () => {
   const portfolios = [
     {
       id: 1,
-      src: XI,
+      src: Workout,
       title: "Workout To-Do List",
       desc: "CRUD Application that the user can make a list of works with the ability to update and delete with pagination.",
       size: "scale-200",
@@ -81,8 +82,7 @@ const Projects = () => {
               <div className="w-1/2 gap-2 right-div justify-center justify-self-center hidden md:flex ">
                 <img
                   src={src}
-                  alt=""
-                  width={230}
+                  alt={title}
                   className="rounded-md hover:scale-105 duration-300"
                 />
               </div>
