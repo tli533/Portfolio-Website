@@ -1,10 +1,4 @@
 import React from "react";
-import FF2 from "../assets/projects/FF2.png";
-import FF1 from "../assets/projects/FF1 (1).png";
-import FF3FEBRUARY from "../assets/projects/FF3FEBRUARY.png";
-import XI from "../assets/projects/XI.png";
-import XII from "../assets/projects/XII.png";
-import triangle from "../assets/projects/triangle.jpg";
 import personal from "../assets/projects/personal_site.PNG";
 import Workout from "../assets/projects/Workout website.PNG";
 
@@ -16,6 +10,7 @@ const Projects = () => {
       title: "Workout To-Do List",
       desc: "CRUD Application that the user can make a list of works with the ability to update and delete with pagination.",
       size: "scale-200",
+      href: "https://workout-app-xi.vercel.app/",
       frameWorks: [
         "React",
         "Javascript",
@@ -58,7 +53,7 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-1 gap-10 px-12 sm:px-0">
-          {portfolios.map(({ id, src, title, desc, frameWorks, scale }) => (
+          {portfolios.map(({ id, src, title, desc, frameWorks, href }) => (
             <div
               key={id}
               className="justify-self-center sm:w-5/6 container border border-gray-500 overflow-hidden object-center items-center shadow-md shadow-gray-600 rounded-lg hover:scale-105 duration-300"
@@ -66,6 +61,14 @@ const Projects = () => {
               <div className="left-div pt-4 pb-7 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col sm:group-even:ml-[20rem]">
                 <h3 className="pb-7 font-bold">{title}</h3>
                 <p className="sm:text-xs md:text-base py-1 pb-5">{desc}</p>
+                <a
+                  href={href}
+                  className="sm:text-xs md:text-base py-1 pb-5 text-gray-500 hover:text-white duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {href}
+                </a>
                 <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                   {frameWorks &&
                     frameWorks.map((framework, index) => (
