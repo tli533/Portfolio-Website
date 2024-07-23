@@ -8,7 +8,7 @@ const Projects = () => {
       id: 1,
       src: Workout,
       title: "Workout To-Do List",
-      desc: "CRUD Application that the user can make a list of works with the ability to update and delete with pagination.",
+      desc: "MERN Application that the user can make a list of workouts with the ability to update and delete with pagination. Hosted with Vercel",
       size: "scale-200",
       href: "https://workout-app-xi.vercel.app/",
       frameWorks: [
@@ -24,7 +24,7 @@ const Projects = () => {
       id: 2,
       src: personal,
       title: "Personal Website",
-      desc: "My portfolio website using tailwind and can be viewed on mobile.",
+      desc: "My portfolio website using tailwind and can be viewed on mobile. Hosted with Netilify",
       frameWorks: ["React", "Javascript", "Tailwind"],
       size: "scale-200",
     },
@@ -82,13 +82,15 @@ const Projects = () => {
                 </ul>
               </div>
 
-              <div className="w-1/2 gap-2 right-div justify-center justify-self-center hidden md:flex ">
-                <img
-                  src={src}
-                  alt={title}
-                  className="rounded-md hover:scale-105 duration-300"
-                />
-              </div>
+              {src && (
+                <div className="w-1/2 gap-2 right-div justify-center justify-self-center hidden md:flex ">
+                  <img
+                    src={src}
+                    alt={title}
+                    className="rounded-md hover:scale-105 duration-300"
+                  />
+                </div>
+              )}
             </div>
           ))}
         </div>
