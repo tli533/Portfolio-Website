@@ -62,6 +62,7 @@ const Home = () => {
           className="gap-2 sm:gap-3 flex items-center font-bold px-3 py-1 sm:py-2 sm:px-4 uppercase tracking-wider rounded-full border"
           href="/Draft CV.pdf"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Download CV
           <span>
@@ -72,6 +73,7 @@ const Home = () => {
           className=" flex items-center font-bold px-3 py-3 uppercase tracking-wider"
           href="https://www.linkedin.com/in/tim-li-209362209/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <span>
             <FaLinkedin size={40} />
@@ -81,6 +83,7 @@ const Home = () => {
           className="flex items-center font-bold px-3 py-3 uppercase tracking-wider"
           href="https://github.com/tli533"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FaGithub size={40} />
         </a>
