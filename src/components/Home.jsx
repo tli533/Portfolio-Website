@@ -1,5 +1,4 @@
 import React from "react";
-import profile from "../assets/tim.JPG";
 import avatar from "../assets/avatar.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
