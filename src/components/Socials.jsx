@@ -40,7 +40,7 @@ export const Socials = () => {
           CV <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/Draft CV.pdf",
+      href: "/timli CV.pdf",
       style: "rounded-br-md",
       download: true,
     },
