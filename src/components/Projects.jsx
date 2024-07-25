@@ -27,6 +27,7 @@ const Projects = () => {
       desc: "My portfolio website using tailwind and can be viewed on mobile. Hosted with Netilify",
       frameWorks: ["React", "Javascript", "Tailwind"],
       size: "scale-200",
+      href: "https://tim-li-portfolio.netlify.app/",
     },
     {
       id: 3,
