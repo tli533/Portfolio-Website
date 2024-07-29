@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import hand from "../assets/wave.png";
+
 import avatar from "../assets/avatar.png";
 
 const Home = () => {
