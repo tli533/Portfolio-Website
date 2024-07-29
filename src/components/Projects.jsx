@@ -11,6 +11,7 @@ const Projects = () => {
       desc: "MERN Application that the user can make a list of workouts with the ability to update and delete with pagination. Hosted with Vercel",
       size: "scale-200",
       href: "https://workout-app-xi.vercel.app/",
+      href1: "https://github.com/tli533/Learning-Mern-Stack",
       frameWorks: [
         "React",
         "Javascript",
@@ -54,46 +55,56 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-1 gap-10 px-12 sm:px-0">
-          {portfolios.map(({ id, src, title, desc, frameWorks, href }) => (
-            <div
-              key={id}
-              className="justify-self-center sm:w-5/6 container border border-gray-500 overflow-hidden object-center items-center shadow-md shadow-gray-600 rounded-lg hover:scale-105 duration-300"
-            >
-              <div className="left-div pt-4 pb-7 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col sm:group-even:ml-[20rem]">
-                <h3 className="pb-7 font-bold">{title}</h3>
-                <p className="sm:text-xs md:text-base py-1 pb-5">{desc}</p>
-                <a
-                  href={href}
-                  className="sm:text-xs md:text-base py-1 pb-5 text-gray-500 hover:text-white duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {href}
-                </a>
-                <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-                  {frameWorks &&
-                    frameWorks.map((framework, index) => (
-                      <li
-                        key={index}
-                        className="bg-gradient-to-r from-cyan-500 to-blue-500 font-bold px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                      >
-                        {framework}
-                      </li>
-                    ))}
-                </ul>
-              </div>
-
-              {src && (
-                <div className="w-1/2 gap-2 right-div justify-center justify-self-center hidden md:flex ">
-                  <img
-                    src={src}
-                    alt={title}
-                    className="rounded-md hover:scale-105 duration-300"
-                  />
+          {portfolios.map(
+            ({ id, src, title, desc, frameWorks, href, href1 }) => (
+              <div
+                key={id}
+                className="justify-self-center sm:w-5/6 container border border-gray-500 overflow-hidden object-center items-center shadow-md shadow-gray-600 rounded-lg hover:scale-105 duration-300"
+              >
+                <div className="left-div pt-4 pb-7 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col sm:group-even:ml-[20rem]">
+                  <h3 className="pb-7 font-bold">{title}</h3>
+                  <p className="sm:text-xs md:text-base py-1 pb-5">{desc}</p>
+                  <a
+                    href={href}
+                    className="sm:text-xs md:text-base py-1 pb-5 text-gray-500 hover:text-white duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {href}
+                  </a>
+                  <a
+                    href={href1}
+                    className="sm:text-xs md:text-sm py-1 pb-5 text-gray-500 hover:text-white duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {href1}
+                  </a>
+                  <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+                    {frameWorks &&
+                      frameWorks.map((framework, index) => (
+                        <li
+                          key={index}
+                          className="bg-gradient-to-r from-cyan-500 to-blue-500 font-bold px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                        >
+                          {framework}
+                        </li>
+                      ))}
+                  </ul>
                 </div>
-              )}
-            </div>
-          ))}
+
+                {src && (
+                  <div className="w-1/2 gap-2 right-div justify-center justify-self-center hidden md:flex ">
+                    <img
+                      src={src}
+                      alt={title}
+                      className="rounded-md hover:scale-105 duration-300"
+                    />
+                  </div>
+                )}
+              </div>
+            )
+          )}
         </div>
       </div>
     </div>
