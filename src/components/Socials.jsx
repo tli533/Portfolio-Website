@@ -28,15 +28,6 @@ export const Socials = () => {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMailOpen size={30} />
-        </>
-      ),
-      href: "mailto:tim.li200109@gmail.com",
-    },
-    {
-      id: 4,
-      child: (
-        <>
           CV <BsFillPersonLinesFill size={30} />
         </>
       ),
