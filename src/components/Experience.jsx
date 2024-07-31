@@ -8,7 +8,7 @@ const Experience = () => {
        text-white flex flex-col justify-center items-center"
     >
       <div className="pb-8">
-        <p className="text-center text-4xl font-bold pb-4">My Experience</p>
+        <p className="text-center text-4xl font-bold pb-4">Education</p>
       </div>
       <ol className="relative border-l border-gray-200 dark:border-gray-700">
         <li className="mb-10 ml-4">

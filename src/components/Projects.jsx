@@ -11,7 +11,7 @@ const Projects = () => {
       desc: "MERN Application that the user can make a list of workouts with the ability to update and delete with pagination. Hosted with Vercel",
       size: "scale-200",
       href: "https://workout-app-xi.vercel.app/",
-      href1: "https://github.com/tli533/Learning-Mern-Stack",
+      href1: "https://github.com/tli533/Workout-Todo-List-App",
       frameWorks: [
         "React",
         "Javascript",
