@@ -4,8 +4,7 @@ import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-
-import avatar from "../assets/avatar.png";
+import avatar from "../assets/tim_dp1.jpg";
 
 const Home = () => {
   const handRef = useRef(null);
@@ -91,7 +90,7 @@ const Home = () => {
         </Link>
         <a
           className="gap-2 sm:gap-3 flex items-center font-bold px-3 py-1 sm:py-2 sm:px-4 uppercase tracking-wider rounded-full border"
-          href="/timli CV.pdf"
+          href="/Tim Li CV AUS.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

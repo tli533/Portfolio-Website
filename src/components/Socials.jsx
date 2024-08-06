@@ -27,10 +27,10 @@ export const Socials = () => {
       id: 3,
       child: (
         <>
-          CV <BsFillPersonLinesFill size={30} />
+          CV Download <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/timli CV.pdf",
+      href: "/Tim Li CV AUS.pdf",
       style: "rounded-br-md",
       download: true,
     },
