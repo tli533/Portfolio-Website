@@ -30,13 +30,6 @@ const Projects = () => {
       size: "scale-200",
       href: "https://tim-li-portfolio.netlify.app/",
     },
-    {
-      id: 3,
-
-      title: "coming soon",
-      desc: "coming soon",
-      size: "scale-200",
-    },
   ];
 
   return (
