@@ -10,6 +10,7 @@ import github from "../assets/github.png";
 import c from "../assets/c.png";
 import pythonlogo from "../assets/pythonlogo.png";
 import buildkitelogo from "../assets/buildkite.png";
+import redislogo from "../assets/redislogo.png";
 
 const Skills = () => {
   const techs = [
@@ -72,6 +73,12 @@ const Skills = () => {
       src: buildkitelogo,
       title: "Buildkite",
       style: "shadow-green-400",
+    },
+    {
+      id: 11,
+      src: redislogo,
+      title: "Redis",
+      style: "shadow-red-600",
     },
   ];
 

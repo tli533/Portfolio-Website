@@ -1,11 +1,29 @@
 import React from "react";
 import personal from "../assets/projects/personal_site.PNG";
 import Workout from "../assets/projects/Workout website.PNG";
+import tk8tracker from "../assets/projects/tk8_site.PNG";
 
 const Projects = () => {
   const portfolios = [
     {
       id: 1,
+      src: tk8tracker,
+      title: "Tekken 8 Stat Tracker",
+      desc: "A stats tracking web application for Tekken 8 that allows users to search and analyze player stats. Hosted with Vercel",
+      frameWorks: [
+        "React",
+        "Javascript",
+        "Node.js",
+        "Express.js",
+        "Redis",
+        "Tailwind",
+      ],
+      size: "scale-200",
+      href: "https://tk8-tracker-stats.vercel.app/",
+      href1: "https://github.com/tli533/tktracker",
+    },
+    {
+      id: 2,
       src: Workout,
       title: "Workout To-Do List",
       desc: "MERN Application that the user can make a list of workouts with the ability to update and delete with pagination. Hosted with Vercel",
@@ -22,7 +40,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       src: personal,
       title: "Personal Website",
       desc: "My portfolio website using tailwind and can be viewed on mobile. Hosted with Netilify",

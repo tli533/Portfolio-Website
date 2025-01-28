@@ -90,7 +90,7 @@ const Home = () => {
         </Link>
         <a
           className="gap-2 sm:gap-3 flex items-center font-bold px-3 py-1 sm:py-2 sm:px-4 uppercase tracking-wider rounded-full border"
-          href="/Tim Li CV AUS.pdf"
+          href="/Tim AUS CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
